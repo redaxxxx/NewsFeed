@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NewsFeed</string>
+
+    <string name="continue_text_of_btn">Continue</string>
+    <string name="title_text">Discover Breaking News!</string>
+    <string name="description_text">Make it easy for users to access the latest and most recent news quickly and easily from a single platform.</string>
+
+    <!--All strings used in Sign In Fragment -->
+    <string name="sign_in_text">Sign In</string>
+    <string name="enter_your_email">Enter your Email to Sign in to NewsFeed App</string>
+    <string name="email_Text">Email</string>
+    <string name="passwordText">Password</string>
+    <string name="forgot_password_tv">Forgot Password?</string>
+    <string name="or_text">or</string>
+    <string name="sign_in_with_google_text">Sign In with Google</string>
+    <string name="new_to_newsfeed_text">New to NewsFeed?</string>
+    <string name="register_text">Register</string>
+
+
+    <!--All String used in Sign Up Fragment-->
+    <string name="sign_up_text">Sign Up</string>
+    <string name="content_description_img_view">content description</string>
+
+
+</resources>
