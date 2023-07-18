@@ -1,10 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_gray"
     tools:context=".fragments.VerificationFragment">
 
+    <TextView
+        android:id="@+id/verificationCode_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/verification_code_text"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLift"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+        android:textSize="20sp"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/verification_code_sent_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLift"
+        app:layout_constraintTop_toBottomOf="@id/verificationCode_text"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/an_email_with_the_code_has_been_sent_to_textView"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Redanabil@gmail.com"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLift"
+        app:layout_constraintTop_toBottomOf="@id/verification_code_sent_tv"
+        android:textSize="20sp"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"/>
+    
+    <LinearLayout
+        android:id="@+id/verification_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLift"
+        app:layout_constraintTop_toBottomOf="@id/emailTextView">
+        
+        <EditText
+            android:id="@+id/first_et"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/light_gray"
+            android:hint="@string/hint_text_in_verification_layout"
+            android:importantForAutofill="no"
+            android:background="@drawable/verification_edit_text_background" />
+
+        <EditText
+            android:id="@+id/sedond_et"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/light_gray"
+            android:hint="@string/hint_text_in_verification_layout"
+            android:importantForAutofill="no"
+            android:background="@drawable/verification_edit_text_background" />
+
+        <EditText
+            android:id="@+id/third_et"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/light_gray"
+            android:hint="@string/hint_text_in_verification_layout"
+            android:importantForAutofill="no"
+            android:background="@drawable/verification_edit_text_background" />
+
+        <EditText
+            android:id="@+id/forth_et"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/light_gray"
+            android:hint="@string/hint_text_in_verification_layout"
+            android:importantForAutofill="no"
+            android:background="@drawable/verification_edit_text_background" />
+
+        <EditText
+            android:id="@+id/fifth_et"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="1"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/light_gray"
+            android:hint="@string/hint_text_in_verification_layout"
+            android:importantForAutofill="no"
+            android:background="@drawable/verification_edit_text_background" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmCodeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:text="@string/confirm_code_text"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@drawable/btn_background_dark_gray"
+        app:layout_constraintTop_toBottomOf="@id/verification_layout"
+        app:layout_constraintStart_toEndOf="@id/guidelineLift"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@drawable/btn_background_dark_gray"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLift"
+        app:layout_constraintTop_toBottomOf="@id/confirmCodeBtn" />
+
+    <Button
+        android:id="@+id/ResendCodeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:text="@string/resend_code_text"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/confirmCodeBtn"
+        app:layout_constraintStart_toEndOf="@id/guidelineLift"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03872777" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96127223" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05109489" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94890511" />
+</androidx.constraintlayout.widget.ConstraintLayout>

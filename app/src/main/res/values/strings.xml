@@ -15,11 +15,30 @@
     <string name="sign_in_with_google_text">Sign In with Google</string>
     <string name="new_to_newsfeed_text">New to NewsFeed?</string>
     <string name="register_text">Register</string>
+    <string name="sign_in_text_of_btn">Sign In</string>
 
 
-    <!--All String used in Sign Up Fragment-->
+    <!--All Strings used in Sign Up Fragment-->
     <string name="sign_up_text">Sign Up</string>
-    <string name="content_description_img_view">content description</string>
+    <string name="sign_up_text_of_btn">Sign Up</string>
+    <string name="enter_your_email_to_register">Enter your Email Register to NewsFees App</string>
+    <string name="name_hint">Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="sign_up_with_google_text">Sign Up with Google</string>
+    <string name="joined_us_before_text">Joined us before?</string>
 
+    <!--All Strings used in verification fragment -->
+    <string name="verification_code_text">Verification Code</string>
+    <string name="an_email_with_the_code_has_been_sent_to_textView">An email with the code has been sent to</string>
+    <string name="hint_text_in_verification_layout">-</string>
+    <string name="confirm_code_text">Confirm Code</string>
+    <string name="resend_code_text">Resend Code</string>
+
+    <!--All Strings used in forgot Password fragment -->
+    <string name="forgot_password_text">Forgot Password</string>
+    <string name="enter_email_to_reset_password">Enter your Email to Reset Password</string>
+    <string name="send_code_text_of_btn">Send Code</string>
+
+    <string name="content_description_img_view">content description</string>
 
 </resources>
